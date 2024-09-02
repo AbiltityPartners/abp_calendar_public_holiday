@@ -37,9 +37,8 @@ class ResourceCalendarLeaves(models.Model):
                 val_to_update = {}
                 if 'name' in vals:
                     val_to_update['name'] = 'Day off - ' + self.name
-                if 'date_from' in vals:
+                if 'date_from' in vals or 'date_to' in vals:
                     val_to_update['start'] = self.date_from
-                if 'date_to' in vals:
                     val_to_update['stop'] = self.date_to
                 if 'abp_allday' in vals:
                     val_to_update['allday'] = self.abp_allday
