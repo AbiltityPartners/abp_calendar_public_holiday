@@ -44,7 +44,7 @@ class ResourceCalendarLeaves(models.Model):
                 if 'abp_allday' in vals:
                     val_to_update['allday'] = self.abp_allday
                 if val_to_update:
-                    event.write(val_to_update)
+                    event.with_context(allow_to_change_event=True).write(val_to_update)
         return leave
     
     

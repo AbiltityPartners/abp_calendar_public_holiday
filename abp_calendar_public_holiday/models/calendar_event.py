@@ -11,9 +11,10 @@ class CalendarEvent(models.Model):
 
     def write(self, vals):
         if self.abp_resource_calendar_leaves:
-            for field in self._get_leaves_readonly_fields():
-                if field in vals:
-                    raise UserError(_('It is not allowed to modify the dates of a public holiday, please modify it from the public holiday record'))
+            if not self.env.context.get('allow_to_change_event'):
+                for field in self._get_leaves_readonly_fields():
+                    if field in vals:
+                        raise UserError(_('It is not allowed to modify the dates of a public holiday, please modify it from the public holiday record'))
         return super().write(vals)
 
     @api.model
