@@ -2,7 +2,7 @@
 {
     'name': 'Public Holiday on Calendar',
     'category': 'Human Resources',
-    'version': '17.0',
+    'version': '1.0',
     'summary': """Holidays automatically apply for all employees""",
     'description': """
     This module applies automatically a holiday for all employees in the company
