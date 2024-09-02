@@ -10,7 +10,7 @@ class CalendarEvent(models.Model):
     abp_resource_calendar_leaves = fields.Many2one('resource.calendar.leaves', string='Public Holiday', readonly=True, ondelete='cascade')
 
     def write(self, vals):
-        if self.abp_resource_calendar_leaves not self.env.context.get('allow_to_change_event'):
+        if self.abp_resource_calendar_leaves and not self.env.context.get('allow_to_change_event'):
             for field in self._get_leaves_readonly_fields():
                 if field in vals:
                     raise UserError(_('It is not allowed to modify the dates of a public holiday, please modify it from the public holiday record'))
