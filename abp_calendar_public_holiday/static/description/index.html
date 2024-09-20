@@ -5,52 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odoo 16 Public Holiday on Calendar</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <style type="text/css">
-        @import url('https://fonts.googleapis.com/css?family=Nunito:700|Montserrat%20Alternates:400');
-        body {
-            font-family: 'Montserrat Alternates';
-            font-weight: 400;
-        }
-        h1, h2, h3, h4, h5 {
-            font-family: 'Nunito';
-            font-weight: 700;
-        }
-        html {font-size: 100%;}
-        h1 {font-size: 4.210rem;}
-        h2 {font-size: 3.158rem;}
-        h3 {font-size: 2.369rem;}
-        h4 {font-size: 1.777rem;}
-        h5 {font-size: 1.333rem;}
-        small {font-size: 0.750rem;}
-        p {color: #400000;}
-        /* Container border radius */
-        .abp-rounded {border-radius: 20px;}
-        .abp-primary {color: #ad2c2c;}
-        .abp-secondary {color: #acb7c6;}
-        .abp-accent {color: #ee0000;}
-        .abp-white {color: #ffffff;}
-        .abp-bg-primary {background-color: #ad2c2c;}
-        .abp-bg-secondary {background-color: #acb7c6;}
-        .abp-no-decoration-link {text-decoration: none; color:inherit}
-        .zoom {
-            transition: transform .2s; /* Animation */
-        }
-        .zoom:hover {
-            transform: scale(1.03);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="my-5"></div>
         <section id="intro" class="my-5">
-            <div class="container shadow-lg p-3 abp-rounded">
-                <div class="row m-3">
+            <div class="container shadow-lg p-4 abp-rounded">
+                <div class="row m-4">
                     <div class="col">
                         <a href="https://ability-partners.fr" target="_blank">
                             <img src="assets/abp/ability_partners_logo.png" style="height:100px" class="zoom">
@@ -60,116 +25,164 @@
                         <img src="assets/abp/odoo_16_certification.png" style="height:100px">
                         <img src="assets/abp/odoo_17_certification.png" style="height:100px">
                     </div>
-                </div>
-                <div class="row mt-3 justify-content-center">
+                </div><div class="py-1"></div>
+                <div class="row mt-4 justify-content-center">
                     <hr class="hr hr-blurry" style="width:250px"/>
                 </div>
-                <div class="row text-center m-0">
-                    <h1>Public Holiday on Calendar</h1>
+                <div class="row text-center m-4">
+                    <h1>Public Holiday on Calendar Overview</h1>
                 </div>
-                <div class="row text-center m-1">
-                    <p>Description of the module</p>
+                <div class="row text-center mb-4 mx-4"">
+                    <p>
+                        This module allows you to view the public holidays declared in the "Time Off" Apps within the Calendar Apps. 
+                    </p>
                 </div>
             </div>
         </section>
-        <div class="my-5"></div>
         <section id="description" class="my-5">
-            <div class="container shadow p-3 abp-rounded">
-                <div>
-                    <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
-                        <h2>Features</h2>
-                        <p>Public holidays are showed on the calendar for every internal user</p>
-                    </div>
-                    <div class="container p-0 abp-rounded">
-                        <div class="row py-4">
-                            <div class="col-md-6 col-sm-12 p-3">
-                                <a class="abp-no-decoration-link" href="#part1">
-                                    <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);">
-                                        <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                            style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                            <i class="fa-solid fa-star abp-white"></i>
-                                        </div>
-                                        <div>
-                                            <h5><strong>Public holiday on calendar</strong></h5>
-                                            <p>When you create a public holiday, a calendar event is automatically created.</p>
-                                        </div>
+            <div class="container shadow p-4 abp-rounded">
+                
+                <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-5">
+                    <h2>How does it work ?</h2>
+                    <!-- <p>Public holidays are showed on the calendar for every internal user</p> -->
+                    <img src="assets/screenshot/schema.png" class="img-responsive my-4"/>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/1jkgNroCKJg" 
+                        title="ability-partners" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        class="shadow p-0 my-5">
+                    </iframe>
+                </div>
+            </div>
+            <div class="container shadow p-3 abp-rounded mt-5">
+                <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
+                    <h2>Feature documentation</h2>
+                </div>
+                <div class="container p-0 abp-rounded">
+                    <div class="row py-4">
+                        <div class="col-md-6 col-sm-12 p-3">
+                            <a class="abp-no-decoration-link" href="#part1">
+                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);">
+                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
+                                        <i class="fa-solid fa-star abp-white"></i>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-sm-12 p-3">
-                                <a class="abp-no-decoration-link" href="#part2">
-                                    <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25);">
-                                        <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                            style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                            <i class="fa-solid fa-star abp-white"></i>
-                                        </div>
-                                        <div>
-                                            <h5><strong>Calendar automatic update</strong></h5>
-                                            <p>When the public holiday is modified, the changes are automatically applied on the calendar event.</p>
-                                        </div>
+                                    <div>
+                                        <h5><strong>1. Create a public holiday</strong></h5>
+                                        <p>Create a public holiday with a name, start date and end date.</p>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-sm-12 p-3">
-                                <a class="abp-no-decoration-link" href="#part3">
-                                    <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.25);">
-                                        <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                            style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                            <i class="fa-solid fa-star abp-white"></i>
-                                        </div>
-                                        <div>
-                                            <h5><strong>Add new employee (internal user)</strong></h5>
-                                            <p>When a new employee join the company, he will be added on all the public holiday calendar events.</p>
-                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 p-3">
+                            <a class="abp-no-decoration-link" href="#part2">
+                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25);">
+                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
+                                        <i class="fa-solid fa-star abp-white"></i>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-sm-12 p-3">
-                                <a class="abp-no-decoration-link" href="#part4">
-                                    <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.25);">
-                                        <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                            style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                            <i class="fa-solid fa-star abp-white"></i>
-                                        </div>
-                                        <div>
-                                            <h5><strong>Set public holiday calendar event to all day</strong></h5>
-                                            <p>You can specify if the public holiday is all day, the calendar event will be updated automatically.</p>
-                                        </div>
+                                    <div>
+                                        <h5><strong>2. View public holiday</strong></h5>
+                                        <p>The public holiday is displayed in the calendar for all the internal users.</p>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 p-3">
+                            <a class="abp-no-decoration-link" href="#part3">
+                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.25);">
+                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
+                                        <i class="fa-solid fa-star abp-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5><strong>3. Update public holiday information</strong></h5>
+                                        <p>Changing the name or dates in the public holiday form view affects the event on the calendar.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 p-3">
+                            <a class="abp-no-decoration-link" href="#part4">
+                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.25);">
+                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
+                                        <i class="fa-solid fa-star abp-white"></i>
+                                    </div>
+                                    <div>
+                                        <h5><strong>4. Automatically add new internal user</strong></h5>
+                                        <p>When adding an internal user, the event gets updated.</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
-                        <h2>Screenshots</h2>
-                    </div>
+            </div>
+            <div class="container shadow p-3 abp-rounded mt-5">
+                <div class="text-start">
                     <div id="part1" class="pt-5">
-                        <h4>Public holiday on calendar</h4>
-                        <img src="assets/screenshot/add_holidays.png" class="img-responsive w-100 shadow p-0 my-3 abp-rounded"/>
+                        <h4 class="ps-5 mb-5">1. Create a public holiday</h4>
+                        <div class="ps-3">
+                            <p >
+                                Create a new public holiday by provide the following fields :
+                            </p>
+                            <ul>
+                                <li>Name</li>
+                                <li>Start date</li>
+                                <li>End date</li>
+                                <li>Name</li>
+                            </ul>
+                            <p>
+                                Activate "all day" toggle
+                            </p>
+                        </div>
+                        <img src="assets/screenshot/image_1.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
                     </div>
+                    <div class="py-4"></div>
                     <div id="part2" class="pt-5">
-                        <h4>Calendar automatic update</h4>
-                        <img src="assets/screenshot/add_holidays.png" class="img-responsive w-100 shadow p-0 my-3 abp-rounded"/>
+                        <h4 class="ps-5 mb-4">2. View public holiday</h4>
+                        <div class="ps-3">
+                            <p >
+                                The public holiday is displayed in the calendar
+                            </p>
+                        </div>
+                        <img src="assets/screenshot/image_2.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
                     </div>
+                    <div class="py-4"></div>
                     <div id="part3" class="pt-5">
-                        <h4>Add new employee (internal user)</h4>
-                        <img src="assets/screenshot/add_holidays.png" class="img-responsive w-100 shadow p-0 my-3 abp-rounded"/>
+                        <h4 class="ps-5 mb-4">3. Update public holiday information</h4>
+                        <div class="ps-3">
+                            <p >
+                                Updating date or name modifies event informations
+                            </p>
+                        </div>
+                        <img src="assets/screenshot/image_31.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
+                        <img src="assets/screenshot/image_32.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
                     </div>
+                    <div class="py-4"></div>
                     <div id="part4" class="pt-5">
-                        <h4>Set public holiday calendar event to all day</h4>
-                        <img src="assets/screenshot/add_holidays.png" class="img-responsive w-100 shadow p-0 my-3 abp-rounded"/>
+                        <h4 class="ps-5 mb-4">4. Automatically add new internal user</h4>
+                        <div class="ps-3">
+                            <p >
+                                New user is automatically added on public holiday events
+                            </p>
+                        </div>
+                        <img src="assets/screenshot/image_41.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
+                        <img src="assets/screenshot/image_42.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="my-5"></div>
         <section id="footer" class="my-5">
             <div class="container shadow-lg p-3 abp-rounded">
+                <div class="py-3"></div>
                 <div class="container my-5">
                     <img src="assets/abp/odoo_implementation.png" class="img-responsive w-100 abp-rounded">
                 </div>
+                <div class="py-3"></div>
                 <div class="container my-5">
                     <div class="row">
                         <div class="col-md-6 pb-4  d-flex align-items-center justify-content-center"
