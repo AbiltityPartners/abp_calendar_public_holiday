@@ -9,49 +9,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Nunito:700|Montserrat%20Alternates:400');
-body {
-  font-family: 'Montserrat Alternates';
-  font-weight: 400;
-}
-h1, h2, h3, h4, h5 {
-  font-family: 'Nunito';
-  font-weight: 700;
-}
-html {font-size: 100%;}
-h1 {font-size: 4.210rem;}
-h2 {font-size: 3.158rem;}
-h3 {font-size: 2.369rem;}
-h4 {font-size: 1.777rem;}
-h5 {font-size: 1.333rem;}
-small {font-size: 0.750rem;}
-p {color: #400000;}
-li {color: #400000;}
-.abp-rounded {border-radius: 20px;}
-.abp-primary {color: #ad2c2c;}
-.abp-secondary {color: #acb7c6;}
-.abp-accent {color: #ee0000;}
-.abp-white {color: #ffffff;}
-.abp-bg-primary {background-color: #ad2c2c;}
-.abp-bg-secondary {background-color: #acb7c6;}
-.abp-no-decoration-link {text-decoration: none; color:inherit}
-.zoom {
-    transition: transform .2s;
-}
-.zoom:hover {
-    transform: scale(1.03);
-}
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|Montserrat+Alternates:400" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Montserrat Alternates'; font-weight: 400;">
     <div class="container">
         <section id="intro" class="my-5">
-            <div class="container shadow-lg p-4 abp-rounded">
+            <div class="container shadow-lg p-4" style="border-radius: 20px;">
                 <div class="row m-4">
                     <div class="col">
-                        <img src="assets/abp/ability_partners_logo.png" style="height:100px" class="zoom">
+                        <img src="assets/abp/ability_partners_logo.png" style="height:100px">
                     </div>
                     <div class="col d-flex justify-content-end">
                         <img src="assets/abp/odoo_16_certification.png" style="height:100px">
@@ -62,20 +28,24 @@ li {color: #400000;}
                     <hr class="hr hr-blurry" style="width:250px"/>
                 </div>
                 <div class="row text-center m-4">
-                    <h1>Public Holiday on Calendar Overview</h1>
+                    <h1 style="font-family: 'Nunito'; font-weight: 700;">
+                        Public Holiday on Calendar Overview
+                    </h1>
                 </div>
                 <div class="row text-center mb-4 mx-4"">
-                    <p>
+                    <p style="color: #400000;">
                         This module allows you to view the public holidays declared in the "Time Off" Apps within the Calendar Apps. 
                     </p>
                 </div>
             </div>
         </section>
         <section id="description" class="my-5">
-            <div class="container shadow p-4 abp-rounded">
+            <div class="container shadow p-4" style="border-radius: 20px;">
                 
                 <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-5">
-                    <h2>How does it work ?</h2>
+                    <h2 style="font-family: 'Nunito'; font-weight: 700;">
+                        How does it work ?
+                    </h2>
                     <img src="assets/screenshot/schema.png" class="img-responsive my-4"/>
                     <div>
                         <img src="assets/icon/yt_logo.png" alt="Linkedin outraced icon" width="22px" class="me-1"/>
@@ -83,64 +53,74 @@ li {color: #400000;}
                     </div>
                 </div>
             </div>
-            <div class="container shadow p-3 abp-rounded mt-5">
+            <div class="container shadow p-3 mt-5" style="border-radius: 20px;">
                 <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
-                    <h2>Feature documentation</h2>
+                    <h2 style="font-family: 'Nunito'; font-weight: 700;">
+                        Feature documentation
+                    </h2>
                 </div>
-                <div class="container p-0 abp-rounded">
+                <div class="container p-0" style="border-radius: 20px;">
                     <div class="row py-4">
                         <div class="col-md-6 col-sm-12 p-3">
-                            <a class="abp-no-decoration-link" href="#part1">
-                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);">
-                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                        <i class="fa-solid fa-star abp-white"></i>
+                            <a href="#part1" style="text-decoration: none; color:inherit">
+                                <div class="d-flex h-100 p-4" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25); border-radius: 20px; transition: transform 0.2s; transform: scale(1);" onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0; background-color: #ad2c2c;">
+                                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                                     </div>
                                     <div>
-                                        <h5><strong>1. Create a public holiday</strong></h5>
-                                        <p>Create a public holiday with a name, start date and end date.</p>
+                                        <h5 style="font-family: 'Nunito'; font-weight: 700;">
+                                            <strong>1. Create a public holiday</strong>
+                                        </h5>
+                                        <p style="color: #400000;">Create a public holiday with a name, start date and end date.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-6 col-sm-12 p-3">
-                            <a class="abp-no-decoration-link" href="#part2">
-                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25);">
-                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                        <i class="fa-solid fa-star abp-white"></i>
+                            <a href="#part2" style="text-decoration: none; color:inherit">
+                                <div class="d-flex h-100 p-4" style="box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25); border-radius: 20px; transition: transform 0.2s; transform: scale(1);" onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0; background-color: #ad2c2c;">
+                                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                                     </div>
                                     <div>
-                                        <h5><strong>2. View public holiday</strong></h5>
-                                        <p>The public holiday is displayed in the calendar for all the internal users.</p>
+                                        <h5 style="font-family: 'Nunito'; font-weight: 700;">
+                                            <strong>2. View public holiday</strong>
+                                        </h5>
+                                        <p style="color: #400000;">The public holiday is displayed in the calendar for all the internal users.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-6 col-sm-12 p-3">
-                            <a class="abp-no-decoration-link" href="#part3">
-                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.25);">
-                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                        <i class="fa-solid fa-star abp-white"></i>
+                            <a href="#part3" style="text-decoration: none; color:inherit">
+                                <div class="d-flex h-100 p-4" style="box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.25); border-radius: 20px; transition: transform 0.2s; transform: scale(1);" onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0; background-color: #ad2c2c;">
+                                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                                     </div>
                                     <div>
-                                        <h5><strong>3. Update public holiday information</strong></h5>
-                                        <p>Changing the name or dates in the public holiday form view affects the event on the calendar.</p>
+                                        <h5 style="font-family: 'Nunito'; font-weight: 700;">
+                                            <strong>3. Update public holiday information</strong>
+                                        </h5>
+                                        <p style="color: #400000;">Changing the name or dates in the public holiday form view affects the event on the calendar.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-6 col-sm-12 p-3">
-                            <a class="abp-no-decoration-link" href="#part4">
-                                <div class="zoom d-flex h-100 p-4 abp-rounded" style="box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.25);">
-                                    <div class="rounded-circle abp-bg-primary d-flex justify-content-center align-items-center" 
-                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0;">
-                                        <i class="fa-solid fa-star abp-white"></i>
+                            <a href="#part4" style="text-decoration: none; color:inherit">
+                                <div class="d-flex h-100 p-4" style="box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.25); border-radius: 20px; transition: transform 0.2s; transform: scale(1);" onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center" 
+                                        style="width: 36px; height: 36px; margin-right: 10px; flex-shrink: 0; background-color: #ad2c2c;">
+                                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
                                     </div>
                                     <div>
-                                        <h5><strong>4. Automatically add new internal user</strong></h5>
-                                        <p>When adding an internal user, the event gets updated.</p>
+                                        <h5 style="font-family: 'Nunito'; font-weight: 700;">
+                                            <strong>4. Automatically add new internal user</strong>
+                                        </h5>
+                                        <p style="color: #400000;">When adding an internal user, the event gets updated.</p>
                                     </div>
                                 </div>
                             </a>
@@ -148,66 +128,74 @@ li {color: #400000;}
                     </div>
                 </div>
             </div>
-            <div class="container shadow p-3 abp-rounded mt-5">
+            <div class="container shadow p-3 mt-5" style="border-radius: 20px;">
                 <div class="text-start">
                     <div id="part1" class="pt-5">
-                        <h4 class="ps-5 mb-5">1. Create a public holiday</h4>
+                        <h4 class="ps-5 mb-5" style="font-family: 'Nunito'; font-weight: 700;">
+                            1. Create a public holiday
+                        </h4>
                         <div class="ps-3">
-                            <p >
+                            <p style="color: #400000;">
                                 Create a new public holiday by provide the following fields :
                             </p>
-                            <ul>
+                            <ul style="color: #400000;">
                                 <li>Name</li>
                                 <li>Start date</li>
                                 <li>End date</li>
                                 <li>Name</li>
                             </ul>
-                            <p>
+                            <p style="color: #400000;">
                                 Activate "all day" toggle
                             </p>
                         </div>
-                        <img src="assets/screenshot/image_1.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
+                        <img src="assets/screenshot/image_1.png" class="img-responsive w-100 shadow p-0 mt-3" style="border-radius: 20px;"/>
                     </div>
                     <div class="py-4"></div>
                     <div id="part2" class="pt-5">
-                        <h4 class="ps-5 mb-4">2. View public holiday</h4>
+                        <h4 class="ps-5 mb-4" style="font-family: 'Nunito'; font-weight: 700;">
+                            2. View public holiday
+                        </h4>
                         <div class="ps-3">
-                            <p >
+                            <p style="color: #400000;">
                                 The public holiday is displayed in the calendar
                             </p>
                         </div>
-                        <img src="assets/screenshot/image_2.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
+                        <img src="assets/screenshot/image_2.png" class="img-responsive w-100 shadow p-0 mt-3" style="border-radius: 20px;"/>
                     </div>
                     <div class="py-4"></div>
                     <div id="part3" class="pt-5">
-                        <h4 class="ps-5 mb-4">3. Update public holiday information</h4>
+                        <h4 class="ps-5 mb-4" style="font-family: 'Nunito'; font-weight: 700;">
+                            3. Update public holiday information
+                        </h4>
                         <div class="ps-3">
-                            <p >
+                            <p style="color: #400000;">
                                 Updating date or name modifies event informations
                             </p>
                         </div>
-                        <img src="assets/screenshot/image_31.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
-                        <img src="assets/screenshot/image_32.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
+                        <img src="assets/screenshot/image_31.png" class="img-responsive w-100 shadow p-0 mt-3" style="border-radius: 20px;"/>
+                        <img src="assets/screenshot/image_32.png" class="img-responsive w-100 shadow p-0 mt-3" style="border-radius: 20px;"/>
                     </div>
                     <div class="py-4"></div>
                     <div id="part4" class="pt-5">
-                        <h4 class="ps-5 mb-4">4. Automatically add new internal user</h4>
+                        <h4 class="ps-5 mb-4" style="font-family: 'Nunito'; font-weight: 700;">
+                            4. Automatically add new internal user
+                        </h4>
                         <div class="ps-3">
-                            <p >
+                            <p style="color: #400000;">
                                 New user is automatically added on public holiday events
                             </p>
                         </div>
-                        <img src="assets/screenshot/image_41.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
-                        <img src="assets/screenshot/image_42.png" class="img-responsive w-100 shadow p-0 mt-3 abp-rounded"/>
+                        <img src="assets/screenshot/image_41.png" class="img-responsive w-100 shadow p-0 mt-3" style="border-radius: 20px;"/>
+                        <img src="assets/screenshot/image_42.png" class="img-responsive w-100 shadow p-0 mt-3" style="border-radius: 20px;"/>
                     </div>
                 </div>
             </div>
         </section>
         <section id="footer" class="my-5">
-            <div class="container shadow-lg p-3 abp-rounded">
+            <div class="container shadow-lg p-3" style="border-radius: 20px;">
                 <div class="py-3"></div>
                 <div class="container my-5">
-                    <img src="assets/abp/odoo_implementation.png" class="img-responsive w-100 abp-rounded">
+                    <img src="assets/abp/odoo_implementation.png" class="img-responsive w-100" style="border-radius: 20px;">
                 </div>
                 <div class="py-3"></div>
                 <div class="container my-5">
@@ -218,8 +206,10 @@ li {color: #400000;}
                                 <div class="d-flex align-items-center">
                                     <img src="assets/abp/icon.png" alt="Logo ability-partners" width="60px" style="margin-right: 12px;">
                                     <div style="padding: 0px 8px;">
-                                        <h4>Need Help ?</h4>
-                                        <p>Got questions or need help ? Get in touch.</p>
+                                        <h4 style="font-family: 'Nunito'; font-weight: 700;">
+                                            Need Help ?
+                                        </h4>
+                                        <p style="color: #400000;">Got questions or need help ? Get in touch.</p>
                                         <div>
                                             <img src="assets/icon/mail.png" alt="Email icon" width="22px" class="me-1">
                                             <a href="mailto:contact@ability-partners.fr">contact@ability-partners.fr</a>
@@ -238,8 +228,10 @@ li {color: #400000;}
                                 <div class="d-flex align-items-center">
                                     <img src="assets/icon/linkedin.png" alt="Linkedin icon" width="50px" style="margin-right: 12px;">
                                     <div>
-                                        <h4>LinkedIn</h4>
-                                        <p>Follow us on LinkedIn !</p>
+                                        <h4 style="font-family: 'Nunito'; font-weight: 700;">
+                                            LinkedIn
+                                        </h4>
+                                        <p style="color: #400000;">Follow us on LinkedIn !</p>
                                         <div>
                                             <img src="assets/icon/linkedin_outraced.png" alt="Linkedin outraced icon" width="22px" class="me-1"/>
                                             Ability Partners
