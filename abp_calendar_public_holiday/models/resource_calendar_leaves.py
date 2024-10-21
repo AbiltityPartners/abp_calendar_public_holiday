@@ -12,24 +12,29 @@ class ResourceCalendarLeaves(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         leaves = super(ResourceCalendarLeaves, self).create(vals_list)
-        
         for leave in leaves:
             if not leave.holiday_id or not leave.holiday_id.id:
                 partners = self.env['res.users'].search([('share','=',False)]).partner_id.mapped('id')           
-                event = self.env['calendar.event'].create({
-                    'name': 'Day off - ' + leave.name,
+                event = self.env['calendar.event'].with_context(
+                    allowed_company_ids=[],
+                    no_mail_to_attendees=True,
+                    calendar_no_videocall=True,
+                    active_model=self._name
+                ).create({
+                    'name': 'Public Time Off - ' + leave.name,
                     'partner_ids': partners,
                     'start': leave.date_from,
                     'stop': leave.date_to,
                     'abp_resource_calendar_leaves': leave.id,
                     'allday' : leave.abp_allday,
+                    'privacy': 'confidential',
+                    'activity_ids': [(5, 0, 0)],
+                    'res_id': leave.id,
                 })
                 leave.abp_calendar_event = event
-    
         return leaves
     
     def write(self, vals):
-        # OVERRIDE
         leave = super(ResourceCalendarLeaves, self).write(vals)
         if not self.holiday_id or not self.holiday_id.id:
             event = self.abp_calendar_event

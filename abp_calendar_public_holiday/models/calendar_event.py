@@ -16,6 +16,18 @@ class CalendarEvent(models.Model):
                     raise UserError(_('It is not allowed to modify the dates of a public holiday, please modify it from the public holiday record'))
         return super().write(vals)
 
+    def _need_video_call(self):
+        """ Determine if the event needs a video call or not depending
+        on the model of the event.
+
+        This method, implemented and invoked in google_calendar, is necessary
+        due to the absence of a bridge module between google_calendar and hr_holidays.
+        """
+        self.ensure_one()
+        if self.abp_resource_calendar_leaves:
+            return False
+        return super()._need_video_call()
+
     @api.model
     def _get_leaves_readonly_fields(self):
         return [

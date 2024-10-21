@@ -3,7 +3,7 @@
     'name': 'Public Holiday on Calendar',
     'category': 'Human Resources',
     'version': '1.0',
-    'summary': """Holidays automatically apply for all employees""",
+    'summary': """This module allows you to view the public holidays declared in the "Time Off" Apps within the Calendar Apps.""",
     'description': """
     This module applies automatically a holiday for all employees in the company
     """,
